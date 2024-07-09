@@ -3,7 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Book Library</title>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <div class="header">
+        <h1>Sutta's Book Hub</h1>
+        <button class="new-book-btn">Add New Collection</button>
+      </div>
+
+      <div class="form">
+        <div class="form-container">
+          <dialog>
+            <form id="new-book-form">
+              <legend>Enter the Book Details</legend>
+              <div>
+                <label for="title">Title : </label>
+                <input required type="text" name="title" id="title" />
+              </div>
+              <div>
+                <label for="author">Author : </label>
+                <input required type="text" name="author" id="author" />
+              </div>
+              <div>
+                <label for="pages">Number of Pages</label>
+                <input required type="number" name="pages" id="pages" />
+              </div>
+              <div>
+                <label for="read">Read</label>
+                <input type="checkbox" name="read" id="read" />
+              </div>
+              <button class="submit" type="submit">Add Book</button>
+              <button class="cancel" value="cancel" formmethod="dialod">
+                Cancel
+              </button>
+            </form>
+          </dialog>
+        </div>
+      </div>
+      <div class="library">
+        <div id="library" class="library-container"></div>
+      </div>
+      <img class="book-background" src="assets/book.svg" alt="background" />
+    </section>
+  </body>
 </html>
