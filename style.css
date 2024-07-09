@@ -105,11 +105,17 @@ body {
 }
 
 .book-background {
+  --size: 50rem;
+
+  height: var(--size);
+  width: var(--size);
+
   fill: red;
 
   position: fixed;
-  top: calc(100% / 4);
-  left: 35%;
+
+  top: calc(50% - calc(var(--size) / 2));
+  left: calc(50% - calc(var(--size) / 2));
   z-index: -1;
   opacity: 0.1;
 }
