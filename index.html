@@ -20,25 +20,45 @@
             <form id="new-book-form">
               <legend>Enter the Book Details</legend>
               <div>
-                <label for="title">Title : </label>
-                <input required type="text" name="title" id="title" />
+                <label for="title">Title </label>
+                <input
+                  required
+                  type="text"
+                  name="title"
+                  id="title"
+                  placeholder="To Kill a Mockingbird"
+                />
               </div>
               <div>
-                <label for="author">Author : </label>
-                <input required type="text" name="author" id="author" />
+                <label for="author">Author </label>
+                <input
+                  required
+                  type="text"
+                  name="author"
+                  id="author"
+                  placeholder="Harper Lee"
+                />
               </div>
               <div>
                 <label for="pages">Number of Pages</label>
-                <input required type="number" name="pages" id="pages" />
+                <input
+                  required
+                  type="number"
+                  name="pages"
+                  id="pages"
+                  placeholder="128"
+                />
               </div>
-              <div>
+              <div class="checkbox-wrapper">
                 <label for="read">Read</label>
-                <input type="checkbox" name="read" id="read" />
+                <input type="checkbox" id="read" name="read" />
               </div>
-              <button class="submit" type="submit">Add Book</button>
-              <button class="cancel" value="cancel" formmethod="dialod">
-                Cancel
-              </button>
+              <div class="button-wrapper">
+                <button class="submit" type="submit">Add Book</button>
+                <button class="cancel" value="cancel" formmethod="dialod">
+                  Cancel
+                </button>
+              </div>
             </form>
           </dialog>
         </div>
