@@ -91,8 +91,13 @@ form button {
   --header: 8.1rem;
   --footer: 4.8rem;
   --form: 3.2rem;
+  --margin-b: 3.2rem;
 
-  min-height: calc(100dvh - var(--header) - var(--footer) - var(--form));
+  margin-bottom: 3.2rem;
+
+  min-height: calc(
+    100dvh - var(--header) - var(--footer) - var(--form) - var(--margin-b)
+  );
 }
 
 .book-card {
