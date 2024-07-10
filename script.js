@@ -27,6 +27,26 @@ function loadLibraryFromLocalStorage() {
 
 function displayBooks() {
   const library = document.querySelector("#library");
+  library.innerHTML = "";
+
+  const addBook = document.createElement("button");
+  addBook.className = "book-card new-book-btn";
+
+  const newBookBtnContainer = document.createElement("div");
+  newBookBtnContainer.className = "new-book-btn-container";
+
+  const addBookTxt = document.createElement("h4");
+  addBookTxt.textContent = "Add New Book";
+  newBookBtnContainer.appendChild(addBookTxt);
+
+  const addLibraryLogo = document.createElement("span");
+  addLibraryLogo.className = "material-symbols-outlined";
+  addLibraryLogo.textContent = "library_add";
+  newBookBtnContainer.appendChild(addLibraryLogo);
+
+  addBook.appendChild(newBookBtnContainer);
+
+  library.appendChild(addBook);
 
   myLibrary.forEach((book, index) => {
     const bookCard = document.createElement("div");
