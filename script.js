@@ -52,15 +52,15 @@ function displayBooks() {
     }`;
     bookCard.appendChild(hasRead);
 
-    const removeButton = document.createElement("button");
-    removeButton.className = "remove-button";
-    removeButton.textContent = "Remove";
-    bookCard.appendChild(removeButton);
-
     const changeReadStatus = document.createElement("button");
     changeReadStatus.className = "change-button";
     changeReadStatus.textContent = "Change Status";
     bookCard.appendChild(changeReadStatus);
+
+    const removeButton = document.createElement("button");
+    removeButton.className = "remove-button";
+    removeButton.textContent = "Remove";
+    bookCard.appendChild(removeButton);
 
     changeReadStatus.addEventListener("click", (e) => {
       book.hasRead = !book.hasRead;
