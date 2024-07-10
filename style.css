@@ -52,7 +52,7 @@ body {
   font-size: 3.2rem;
 }
 
-.new-book-btn,
+/* .new-book-btn, */
 .book-card .change-button,
 .book-card .remove-button,
 form button {
@@ -95,6 +95,22 @@ form button {
   text-align: center;
   margin-top: auto;
   word-break: break-word;
+}
+
+.new-book-btn-container {
+  margin: auto 0;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.new-book-btn-container > span {
+  font-size: 3.2rem;
+}
+
+button.book-card {
+  border: none;
 }
 
 .book-card .remove-button {

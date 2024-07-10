@@ -27,7 +27,6 @@ function loadLibraryFromLocalStorage() {
 
 function displayBooks() {
   const library = document.querySelector("#library");
-  library.innerHTML = "";
 
   myLibrary.forEach((book, index) => {
     const bookCard = document.createElement("div");

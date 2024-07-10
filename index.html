@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Book Library</title>
   </head>
   <body>
     <section>
       <div class="header">
         <h1>Sutta's Book Hub</h1>
-        <button class="new-book-btn">Add New Collection</button>
       </div>
 
       <div class="form">
@@ -64,7 +67,14 @@
         </div>
       </div>
       <div class="library">
-        <div id="library" class="library-container"></div>
+        <div id="library" class="library-container">
+          <button class="book-card new-book-btn">
+            <div class="new-book-btn-container">
+              <h4>Add New Book</h4>
+              <span class="material-symbols-outlined"> library_add </span>
+            </div>
+          </button>
+        </div>
       </div>
       <img class="book-background" src="assets/book.svg" alt="background" />
     </section>
